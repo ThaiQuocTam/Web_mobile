@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/post-crud" method="post">
+    <div>
+        <label>Ho ten : </label>
+        <input type="text" name="Ho_ten">
+    </div>
+    <div>
+        <label>Email : </label>
+        <input type="email" name="Email">
+    </div>
+    <div>
+        <label>Dien thoai : </label>
+        <input type="number" name="Dien_thoai">
+    </div>
+    <div>
+        <label>Ten tai khoan : </label>
+        <input type="text" name="Ten_tai_khoan">
+    </div>
+    <div>
+        <label>Mat khau : </label>
+        <input type="password" name="Mat_khau">
+    </div>
+    <div>
+        <label>Gioi tinh</label>
+        <select name="Gioi_tinh">
+            <option value="1">Nam</option>
+            <option value="0">Nu</option>
+        </select>
+    </div>
+    <div>
+        <label>Quyen</label>
+        <select name="Id_phan_quyen">
+            <option value="6">Admin</option>
+            <option value="7">User</option>
+        </select>
+    </div>
+    <div>
+        <Button type="submit">Dang ki</Button>
+    </div>
+</form>
+</body>
+</html>

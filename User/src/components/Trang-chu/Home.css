@@ -1,0 +1,17 @@
+.slick-slide>div {
+    margin: 0 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.slick-list {
+    margin: 0 -10px;
+}
+
+.slick-slider .slick-next {
+    margin-right: -40px;
+}
+
+.slick-slider .slick-prev {
+    margin-left: -40px;
+}

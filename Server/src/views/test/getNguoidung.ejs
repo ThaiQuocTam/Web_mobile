@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Get nguoi dung</title>
+    </head>
+    <body>
+        <p>Danh sach nguoi dung</p>
+        <table>
+            <tr>
+                <th>Ho ten</th>
+                <th>Email </th>
+                <th>Dien Thoai</th>
+                <th>Tai khoan</th>
+                <th>Mat khau</th>
+                <th>Gioi tinh</th>
+                <th>Quyen</th>
+                <th>action</th>
+            </tr>
+            <% for(let i=0; i<dataTable.length; i++) { %>
+                <tr>
+                    <td><%= dataTable[i].Ho_Ten%> </td>
+                        <td><%= dataTable[i].Email %> </td>
+                            <td><%= dataTable[i].Dien_thoai %> </td>
+                                <td><%= dataTable[i].Ten_tai_khoan %></td>
+                                    <td><%= dataTable[i].Mat_khau %></td>
+                                        <td><%= dataTable[i].Gioi_tinh %></td>
+                                            <td>
+                                                <%= dataTable[i].Id_phan_quyen
+                                                    %>
+                                                </td>
+                                                <td>
+                                                    <a
+                                                        href='/edit-nguoi-dung?id=<%=dataTable[i].id
+                                                        %>'
+                                                        type="button">Edit</a>
+                                                    ||
+                                                    <a
+                                                        href='/delete-nguoi-dung?id=<%=dataTable[i].id
+                                                        %>'type="button">Delete</button></td>
+                                            </tr>
+                                            <% } %>
+                                            </table>
+                                        </body>
+                                    </html>
